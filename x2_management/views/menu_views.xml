@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--Config Menu-->
+        <menuitem id="message_plots_settings_menu"
+                  name="X2"
+                  sequence="300"/>
+        <menuitem id="user_message_plots"
+                  name="Message"
+                  action="message_plots_action"
+                  parent="x2_management.message_plots_settings_menu"
+                  sequence="100"/>
+        <menuitem id="broker_mqtt_plots"
+                  name="Broker"
+                  action="broker_mqtt_action"
+                  parent="x2_management.message_plots_settings_menu"
+                  sequence="200"/>
+    </data>
+</odoo>

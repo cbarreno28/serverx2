@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_broker_mqtt_form" model="ir.ui.view">
+            <field name="name">broker.mqtt.form</field>
+            <field name="model">broker.mqtt</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group col="4">
+                        <field name="name"/>
+                        <field name="url"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_broker_mqtt_tree" model="ir.ui.view">
+            <field name="name">broker.mqtt.tree</field>
+            <field name="model">broker.mqtt</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="url"/>
+                </tree>
+            </field>
+        </record>
+        <record id="broker_mqtt_action" model="ir.actions.act_window">
+            <field name="name">Broker Mqtt</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">broker.mqtt</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

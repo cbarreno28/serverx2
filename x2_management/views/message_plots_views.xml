@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_message_plots_form" model="ir.ui.view">
+            <field name="name">message.plots.form</field>
+            <field name="model">message.plots</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group col="4">
+                        <field name="raw_frame"/>
+                        <field name="root_address"/>
+                        <field name="timestamp"/>
+                        <field name="status"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_message_plots_tree" model="ir.ui.view">
+            <field name="name">message.plots.tree</field>
+            <field name="model">message.plots</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="raw_frame"/>
+                    <field name="root_address"/>
+                    <field name="timestamp"/>
+                    <field name="status"/>
+                </tree>
+            </field>
+        </record>
+        <record id="message_plots_action" model="ir.actions.act_window">
+            <field name="name">Message Plots</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">message.plots</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

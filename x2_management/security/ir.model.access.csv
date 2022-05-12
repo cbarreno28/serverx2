@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_broker_mqtt,user.broker_mqtt,model_broker_mqtt,base.group_user,1,1,1,1
+access_message_plots,user.message.plots,model_message_plots,base.group_user,1,1,1,1
